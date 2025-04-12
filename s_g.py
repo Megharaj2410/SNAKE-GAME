@@ -84,7 +84,7 @@ st.text(game_area)
 if not st.session_state.game_over:
     move_snake()
     time.sleep(MOVE_DELAY)
-    st.experimental_rerun()
+    st.rerun()
 else:
     st.error("💀 Game Over!")
     if st.button("🔁 Restart"):
